@@ -3,13 +3,13 @@ package com.lshaw
 class BookReview {
 
 String book
-Date dateCreated
+Date dateMade
 String student
 String review
 
     static constraints = {
 book blank:false, nullable:false
-dateCreated blank:false, nullable:false
+dateMade blank:false, nullable:false
 student blank:false, nullable:false
 review blank:false, nullable:false
     }
