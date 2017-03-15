@@ -5,11 +5,14 @@ class Book {
 String title
 String subject
 String author
-int isbn
+String isbn
 Date dateBorrowed
 Date returnDate
 String student
 Boolean overdue
+
+static hasMany = [bookReviews:BookReview]
+static belongsTo = Library
 
     static constraints = {
 title blank:false, nullable:false
