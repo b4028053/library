@@ -15,8 +15,13 @@ class LibrarySpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void checkLength() {
+        when: "A library has a name"
+	
+	def libraryOne=new Library(name: 'Adsetts')
+
+	then: "The checkLength method will check the length of the name"
+
+	!libraryOne.validate()
     }
 }

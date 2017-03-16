@@ -15,8 +15,16 @@ class BookSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
+    void "checkDate"() {
+
+	def due = "16/03/2017"
+
+        when: "A book has a return date"
+	
+	def bookOne=new Book(returnDate:'20/03/2017')
+
+	then: "the checkDate method checks that the return date is after todays date"
+	
+	bookOne.checkDate()>= due
+}
 }

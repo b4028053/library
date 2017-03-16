@@ -15,8 +15,14 @@ class LibrarianSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "checkLength"() {
+	when: "A librarian has a name and telephone number"
+	
+	def mary=new Librarian(name: 'Mary Jones', telephone: '011412345')
+
+	then: "The checkLength method will check the length of the number"
+
+	mary.validate()
+	
     }
 }

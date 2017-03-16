@@ -14,6 +14,10 @@ Boolean overdue
 static hasMany = [bookReviews:BookReview]
 static belongsTo = Library
 
+String checkDate(){
+"$returnDate"
+}
+
     static constraints = {
 title blank:false, nullable:false
 subject blank:false, nullable:false

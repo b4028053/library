@@ -11,11 +11,11 @@ int studySpaces
 static hasMany = [books:Book, librarians:Librarian, students:Student]
 
     static constraints = {
-name blank:false, nullable:false
+name blank:false, nullable:false, size:1..10
 address blank:false, nullable:false
 openingHours blank:false, nullable:false
 location blank:false, nullable:false
-studySpaces blank:false, nullable:false
+studySpaces blank:false, nullable:false, max:300
 
     }
 }

@@ -12,6 +12,12 @@ String course
 static hasMany = [bookReviews:BookReview, books:Book]
 static belongsTo = Course
 
+
+String toString(){
+
+"$name,$email"
+
+}
     static constraints = {
 name blank:false, nullable:false
 email blank:false, nullable:false, email:true

@@ -10,6 +10,11 @@ String password
 String telephone
 String library
 
+
+String checkLength() {
+"$name,$telephone"
+}
+
 static belongsTo = Library
 
     static constraints = {

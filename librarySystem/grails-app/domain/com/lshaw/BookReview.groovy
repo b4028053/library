@@ -9,10 +9,13 @@ String review
 
 static belongsTo = Book
 
+String testmaxSize(){
+"$review"
+}
     static constraints = {
 book blank:false, nullable:false
 dateMade blank:false, nullable:false
 student blank:false, nullable:false
-review blank:false, nullable:false, widget:'textarea'
+review blank:false, nullable:false, widget:'textarea', maxSize:100
     }
 }
