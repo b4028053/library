@@ -10,13 +10,17 @@ String password
 String telephone
 Library library
 
+String toString() {
+"$name"
+}
+
+
+static belongsTo = Library
+
 
 String checkEmail() {
 "$email"
 }
-
-static belongsTo = Library
-
     static constraints = {
 name blank:false, nullable:false
 email blank:false, nullable:false, email:true

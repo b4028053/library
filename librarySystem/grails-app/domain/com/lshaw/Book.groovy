@@ -11,8 +11,13 @@ Date returnDate
 Student student
 Boolean overdue
 
-static hasMany = [bookReviews:BookReview]
+String toString() {
+"$title"
+}
+
+static hasMany = [bookReviews:BookReview, librarys:Library]
 static belongsTo = Library
+
 
 String checkDate(){
 "$returnDate"

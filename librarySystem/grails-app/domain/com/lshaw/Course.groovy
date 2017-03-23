@@ -10,6 +10,10 @@ String description
 String studyMode
 double tuitionFees
 
+String toString() {
+"$title"
+}
+
 static hasMany = [students:Student]
 
 double calculateFees(){

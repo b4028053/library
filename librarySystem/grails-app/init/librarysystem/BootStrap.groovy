@@ -4,7 +4,7 @@ class BootStrap {
 
     def init = { servletContext ->
 
-	def BScomputing = new Course(
+	/*def BScomputing = new Course(
 	title:'BSc Hons Computing',
 	code:'BSC1',
 	leader:'Lynee Dawson',
@@ -122,7 +122,7 @@ class BootStrap {
 	cantor.addToBooks(TATE)
 	cantor.addToBooks(TTOFU)
 	cantor.addToStudents(Laura)
-	cantor.addToStudents(Sam)
+	cantor.addToStudents(Sam)*/
 
 
     }

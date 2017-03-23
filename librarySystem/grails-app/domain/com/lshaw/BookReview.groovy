@@ -7,7 +7,13 @@ Date dateMade
 Student student
 String review
 
+String toString() {
+"$book"
+}
+
+
 static belongsTo = Book
+
 
 String testmaxSize(){
 "$review"
