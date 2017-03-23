@@ -5,14 +5,14 @@ class Librarian {
 String name
 String email
 String office
-String username
+String userName
 String password
 String telephone
-String library
+Library library
 
 
-String checkLength() {
-"$name,$telephone"
+String checkEmail() {
+"$email"
 }
 
 static belongsTo = Library
@@ -21,7 +21,7 @@ static belongsTo = Library
 name blank:false, nullable:false
 email blank:false, nullable:false, email:true
 office blank:false, nullable:false
-username blank:false, nullable:false, unique:true
+userName blank:false, nullable:false, unique:true
 password blank:false, nullable:false
 telephone blank:false, nullable:false, size:1..11
 library blank:false, nullable:false

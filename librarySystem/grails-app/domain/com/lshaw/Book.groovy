@@ -8,7 +8,7 @@ String author
 String isbn
 Date dateBorrowed
 Date returnDate
-String student
+Student student
 Boolean overdue
 
 static hasMany = [bookReviews:BookReview]

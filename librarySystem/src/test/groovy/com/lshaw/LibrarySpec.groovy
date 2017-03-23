@@ -15,13 +15,13 @@ class LibrarySpec extends Specification {
     def cleanup() {
     }
 
-    void checkLength() {
+    void "test"() {
         when: "A library has a name"
 	
-	def libraryOne=new Library(name: 'Adsetts')
+	def adsetts=new Library(name: 'Adsetts', address: '', location: 'sheffield', studySpaces: 200, openingHours: '1:00 - 6:00').save()
 
 	then: "The checkLength method will check the length of the name"
 
-	!libraryOne.validate()
+	adsetts.validate()
     }
 }

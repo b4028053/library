@@ -2,9 +2,9 @@ package com.lshaw
 
 class BookReview {
 
-String book
+Book book
 Date dateMade
-String student
+Student student
 String review
 
 static belongsTo = Book

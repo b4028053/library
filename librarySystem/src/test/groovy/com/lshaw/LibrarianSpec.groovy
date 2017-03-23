@@ -15,12 +15,12 @@ class LibrarianSpec extends Specification {
     def cleanup() {
     }
 
-    void "checkLength"() {
-	when: "A librarian has a name and telephone number"
+    void "checkEmail"() {
+	when: "A librarian has an email"
 	
-	def mary=new Librarian(name: 'Mary Jones', telephone: '011412345')
+	def mary=new Librarian(name: 'Mary Jones', email: 'librarian@gmail.com', office: 'Cantor-9312', username: 'mary123', password: 'password', telephone: '0114567364', library: 'adsetts').save()
 
-	then: "The checkLength method will check the length of the number"
+	then: "The checkEmail method will check the email is vaild"
 
 	mary.validate()
 	
