@@ -15,6 +15,7 @@
 <body>
 	<div class="row">
 		<asset:image src="librarybanner.jpg"/>
+		<g:loginToggle/>
 	</div>
     <g:layoutBody/>
 
