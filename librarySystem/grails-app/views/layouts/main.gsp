@@ -14,9 +14,15 @@
 </head>
 <body>
 	<div class="row">
-		<asset:image src="librarybanner.jpg"/>
-		<g:loginToggle/>
-		<g:studentLoginToggle/>
+               <asset:image src="librarybanner.jpg"/>
+          <p>
+          <g:link controller="librarian" action="librarianLogin">Librarian Login Area </g:link>
+          </p>
+
+          <p>
+          <g:link controller="student" action="studentLogin">Student Login Area </g:link>
+          </p>
+
 	</div>
     <g:layoutBody/>
 

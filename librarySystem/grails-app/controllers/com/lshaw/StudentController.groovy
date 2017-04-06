@@ -27,6 +27,11 @@ def logout = {
 }
 
 
+def studentLogin = {
+      render view:'studentArea'
+}
+
+
 def advSearch(){
 
 }

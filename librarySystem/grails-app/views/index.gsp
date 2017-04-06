@@ -17,6 +17,10 @@
 			<asset:image src="library1.jpg"/>
 		</div>
             </p>
+            <p>
+               Welcome to the Univeristy library system.
+               This is used by librarians and students to perform several tasks.
+            </p>
 
         </section>
     </div>

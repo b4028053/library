@@ -26,4 +26,9 @@ def logout = {
 	redirect(uri:'/')
 }
 
+
+def librarianLogin = {
+      render view:'librarianArea'
+}
+
 }
